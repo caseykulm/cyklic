@@ -13,9 +13,9 @@ interface StartStopComponent {
   fun stop()
 }
 
-class Component<T, U, D1: Driver<T, U>>(
-    val driver: D1,
-    private val model: (T) -> Observable<U>
+class Component<InputType, OutputType, DriverType: Driver<InputType, OutputType>>(
+    val driver: DriverType,
+    private val model: (InputType) -> Observable<OutputType>
 ): StartStopComponent {
   private var subs = CompositeSubscription()
 

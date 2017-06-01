@@ -8,7 +8,6 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import com.bkase.cyklic.example.SimpleCounter
-import com.bkase.cyklic.example.app.R
 import com.jakewharton.rxbinding.view.clicks
 
 class MainActivity : AppCompatActivity() {
